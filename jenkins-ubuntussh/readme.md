@@ -24,7 +24,7 @@
 	
 	To stop all containers:
 	
-	docker-compose down
+	docker-compose stop
 	
 	To destroy all containers:
 	
