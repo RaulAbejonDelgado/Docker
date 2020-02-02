@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    environment {
+        NAME = 'drohne'
+        SURNAME    = 'enhord'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo $NAME $SURNAME'
+            }
+        }
+    }
+}

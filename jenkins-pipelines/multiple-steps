@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "First action on step"'
+                sh '''
+                    echo "And mores actions after first action in the same step"
+                    ls -lah
+                '''
+            }
+        }
+    }
+}
